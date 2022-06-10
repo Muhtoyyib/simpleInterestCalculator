@@ -5,8 +5,9 @@ body {
 }
 
 h1{
-    color:grey;
+    color:#1b1f22;
     font-family: verdana;
+    opacity: 1.5;
 }
 
 .maindiv{
@@ -17,8 +18,44 @@ h1{
     border-radius: 25px;
     margin: auto;
     margin-top: 25%;
-    
-   /* transition: translate(0, -50%);*/
+}
+
+label, input, select{
+    margin-bottom: 15px;
+}
+
+label{
+    color: grey;
+}
+
+hr{
+    opacity: 0.5;
+    width: 70%;
+}
+
+footer{
+    text-align: center;
+    margin-top: 25px;
+    color: #1b1f22;
+    font-weight: bold;
+}
+
+#interest{
+    font-weight: bold;
+    color:#1c2e22;
+}
+
+#result{
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+button{
+    margin-top: 15px;
+}
+
+#computation{
+    color: grey;
 }
 
 

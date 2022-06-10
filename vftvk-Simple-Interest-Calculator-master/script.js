@@ -10,9 +10,12 @@ function compute() {
         text.innerHTML = "Enter a positive number";
         text.style.color = "red"
     } else{
-        document.getElementById('result').innerHTML += interest;
-        document.getElementById('computation').innerHTML= `If you deposit <b>${p}</b>, <br> at an interest
+        var computation =  `If you deposit <b>${p}</b>, <br> at an interest
         rate of <b>${r}</b>. <br> You will receive an amount of <b>${interest}</b>,<br> in the year ${year}.`;
+        
+        document.getElementById('result').innerHTML += interest;
+        document.getElementById('result').style.color = 'green';
+        document.getElementById('computation').innerHTML= computation;
     }
 }
 
