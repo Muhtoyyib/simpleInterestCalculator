@@ -6,9 +6,10 @@ function compute() {
    var year = new Date().getFullYear()+parseInt(t);
 
    if(p == 0 || p === '') {
-        var text = document.getElementById('vP');
-        text.innerHTML = "Enter a positive number";
-        text.style.color = "red";
+      //  var text = document.getElementById('vP');
+        //text.innerHTML = "Enter a positive number";
+        //text.style.color = "red";
+        alert('Enter a positive number')
     }else{
         
         var computation =  `<b style="color: black;">If</b> you deposit <b style="color: red;">${p}</b>, <br> <b style="color: black;">at</b> an interest
