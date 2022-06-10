@@ -6,42 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <title>Simple Interest Calculator</title>
+    <title>Web App - Simple Interest Calculator</title>
 </head>
 <body>
     <main class="maindiv">
         <h1>Simple Interest Calculator</h1>
+        <div>
+            <p id="vP"></p> 
 
-        <p id="vP"></p> 
-
-        <label for="principal">Amount</label>
-        <input type="number"  id="principal"><br/>
-
-        <label for="rate">Rate</label>
-        <input type="range" onchange="updateRate()" id="rate" min="1" max="20" value="10.25" step="0.25"><span id="rate_val">10.25% </span><br>
-
-        <label for="years">No. of years</label>
-        <select id="years">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-        </select> <br/>
-
-        <label for="result" id="interest">Interest:</label>
-        <span id="result"></span><br>
-        
-        <button onclick="compute()">Compute Interest</button><br><br>
-        
-        <span id="computation">
-
-        </span><br><br>
+            <label for="principal">Amount</label>
+            <input type="number"  id="principal"><br/>
+    
+            <label for="rate">Rate</label>
+            <input type="range" onchange="updateRate()" id="rate" min="1" max="20" value="10.25" step="0.25"><span id="rate_val">10.25% </span><br>
+    
+            <label for="years">No. of years</label>
+            <select id="years">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+            </select> <br/>
+    
+            <label for="result" id="interest">Interest:</label>
+            <span id="result"></span><br>
+            
+            <button onclick="compute()">Compute Interest</button><br><br>
+            
+            <span id="computation">
+    
+            </span>
+        </div>
+          
+        <br><br>
 
         <hr>
         

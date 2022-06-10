@@ -5,7 +5,7 @@ function compute() {
    var interest = p * r * t / 100;
    var year = new Date().getFullYear()+parseInt(t);
 
-   if(p == 0 || p === '') {
+   if(p == 0 || p === '' || p < 0) {
       //  var text = document.getElementById('vP');
         //text.innerHTML = "Enter a positive number";
         //text.style.color = "red";
