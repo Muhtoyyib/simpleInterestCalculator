@@ -5,14 +5,15 @@ function compute() {
    var interest = p * r * t / 100;
    var year = new Date().getFullYear()+parseInt(t);
 
-   if(p === 0 || p === '') {
+   if(p == 0 || p === '') {
         var text = document.getElementById('vP');
         text.innerHTML = "Enter a positive number";
-        text.style.color = "red"
-    } else{
-        var computation =  `If you deposit <b>${p}</b>, <br> at an interest
-        rate of <b>${r}</b>. <br> You will receive an amount of <b>${interest}</b>,<br> in the year ${year}.`;
+        text.style.color = "red";
+    }else{
         
+        var computation =  `<b style="color: black;">If</b> you deposit <b style="color: red;">${p}</b>, <br> <b style="color: black;">at</b> an interest
+        rate of <b style="color: red;">${r}</b>. <br> <b style="color: black;">You</b> will receive an amount of <b style="color: red;">${interest}</b>,<br> <b style="color: black;">in</b> the year <b style="color: red;">${year}</b>.`;
+
         document.getElementById('result').innerHTML += interest;
         document.getElementById('result').style.color = 'green';
         document.getElementById('computation').innerHTML= computation;
