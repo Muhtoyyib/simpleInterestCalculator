@@ -5,16 +5,17 @@ function compute() {
    var interest = p * r * t / 100;
    var year = new Date().getFullYear()+parseInt(t);
 
-   document.getElementById('result').innerHTML= interest;
-   document.getElementById('computation').innerHTML= `If you deposit <b>${p}</b>, <br> at an interest
-   rate of <b>${r}</b>. <br> You will receive an amount of <b>${interest}</b>,<br> in the year ${year}.`;
-
-   if(p === 0 || p === ''){
-       var text = document.getElementById('vP');
-       text.innerHTML = "Enter a positive number";
-       text.style.color = "red";
-   }
+   if(p === 0 || p === '') {
+        var text = document.getElementById('vP');
+        text.innerHTML = "Enter a positive number";
+        text.style.color = "red"
+    } else{
+        document.getElementById('result').innerHTML += interest;
+        document.getElementById('computation').innerHTML= `If you deposit <b>${p}</b>, <br> at an interest
+        rate of <b>${r}</b>. <br> You will receive an amount of <b>${interest}</b>,<br> in the year ${year}.`;
+    }
 }
+
 
 function updateRate() 
 {
